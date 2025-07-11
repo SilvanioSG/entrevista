@@ -43,7 +43,7 @@
         <h2 class="font-semibold">5. Você possui certificações reconhecidas?</h2>
         <div class="faq-answer text-gray-700">Sim, mais de 150 certificações.  
           <a class="text-blue-600 underline" href="https://www.credly.com/users/silvanio-gois/badges#credly" target="_blank">🎓 Ver certificações no Credly</a>
- <li><a class="text-blue-600 underline" href="https://app.powerbi.com/view?r=eyJrIjoiMTBiOWNkMGYtYTAzYS00OTQ3LTk0YTUtY2NmNjg1YjUwNmExIiwidCI6IjJlYmQyYzU0LWY1ZDMtNGVmYi05ZGE3LWU4Yzk0YmQyMWQzOSJ9" target="_blank">Dashboard Power BI</a></li>
+ <li><a class="text-blue-600 underline"href="https://app.powerbi.com/viewr=eyJrIjoiMTBiOWNkMGYtYTAzYS00OTQ3LTk0YTUtY2NmNjg1YjUwNmExIiwidCI6IjJlYmQyYzU0LWY1ZDMtNGVmYi05ZGE3LWU4Yzk0YmQyMWQzOSJ9" target="_blank">Dashboard Power BI</a></li>
         </div>
       </div>
       <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
@@ -92,4 +92,4 @@
     });
   </script>
 </body>
-</html>
+</html>      
