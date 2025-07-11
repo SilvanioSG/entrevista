@@ -37,13 +37,12 @@
       </div>
       <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
         <h2 class="font-semibold">4. Quais ferramentas você domina tecnicamente?</h2>
-        <div class="faq-answer text-gray-700">Power BI, Python (pandas, seaborn, matplotlib), Excel Avançado, Looker Studio, MS Project, Linguagem R, Google Sheets, GitHub Pages.</div>
+        <div class="faq-answer text-gray-700">Power BI, Python (pandas, seaborn, matplotlib), Excel Avançado, Looker Studio, HTML, CSS, Google Sheets, GitHub Pages.</div>
       </div>
       <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
         <h2 class="font-semibold">5. Você possui certificações reconhecidas?</h2>
         <div class="faq-answer text-gray-700">Sim, mais de 150 certificações.  
           <a class="text-blue-600 underline" href="https://www.credly.com/users/silvanio-gois/badges#credly" target="_blank">🎓 Ver certificações no Credly</a>
- <li><a class="text-blue-600 underline"href="https://app.powerbi.com/viewr=eyJrIjoiMTBiOWNkMGYtYTAzYS00OTQ3LTk0YTUtY2NmNjg1YjUwNmExIiwidCI6IjJlYmQyYzU0LWY1ZDMtNGVmYi05ZGE3LWU4Yzk0YmQyMWQzOSJ9" target="_blank">Dashboard Power BI</a></li>
         </div>
       </div>
       <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
@@ -55,6 +54,7 @@
         <h2 class="font-semibold">7. Onde encontro seus projetos práticos?</h2>
         <div class="faq-answer text-gray-700">
           <ul class="list-disc ml-4">
+            <li><a class="text-blue-600 underline" href="https://app.powerbi.com/view?r=eyJrIjoiMTBiOWNkMGYtYTAzYS00OTQ3LTk0YTUtY2NmNjg1YjUwNmExIiwidCI6IjJlYmQyYzU0LWY1ZDMtNGVmYi05ZGE3LWU4Yzk0YmQyMWQzOSJ9" target="_blank">Dashboard Power BI</a></li>
             <li><a class="text-blue-600 underline" href="https://lookerstudio.google.com/reporting/4486fe19-9760-4f24-8c5f-e07fd1e23ad2/page/TAEKF" target="_blank">Looker Studio</a></li>
             <li><a class="text-blue-600 underline" href="https://silvaniosg.github.io/AnaliseDedados/" target="_blank">Projetos Python</a></li>
             <li><a class="text-blue-600 underline" href="https://www.silvaniogois.com.br/portfolio" target="_blank">Portfólio completo</a></li>
@@ -92,4 +92,4 @@
     });
   </script>
 </body>
-</html>      
+</html>
