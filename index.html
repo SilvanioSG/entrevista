@@ -1,97 +1,82 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Entrevista Profissional - Silvânio Gois</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .faq-item { cursor: pointer; border-bottom: 1px solid #e5e7eb; }
-    .faq-answer { display: none; margin-top: 0.5rem; }
-    .faq-item.open .faq-answer { display: block; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrevista Profissional - Silvânio Gois</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f9f9f9; color: #333; margin: 0; padding: 0; }
+        header { background: #222; color: #fff; padding: 1em; text-align: center; }
+        header img { max-height: 60px; }
+        main { padding: 2em; max-width: 900px; margin: auto; }
+        h2 { margin-top: 2em; border-bottom: 2px solid #ccc; padding-bottom: 0.3em; }
+        .faq-question { cursor: pointer; font-weight: bold; background: #e0e0e0; padding: 0.5em; border-radius: 5px; }
+        .faq-answer { display: none; padding: 0.5em 1em; background: #fff; border-left: 3px solid #333; }
+        .faq-item { margin-bottom: 1em; }
+        .links a { display: block; margin-top: 0.5em; color: #004a99; }
+        footer { background: #222; color: white; text-align: center; padding: 1em; margin-top: 2em; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-  <div class="max-w-4xl mx-auto p-6">
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-3xl font-bold text-blue-800">📝 Entrevista Profissional – Silvânio Gois</h1>
-      <img src="Logo_br_Site.png" alt="Logo SG" class="h-12">
-    </div>
-
-    <p class="mb-6 text-gray-700 text-lg">Clique nas perguntas abaixo para ver as respostas como se estivesse entrevistando Silvânio:</p>
-    <div id="faq" class="space-y-4 text-base">
-      <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
-        <h2 class="font-semibold">1. Quem é Silvânio Gois?</h2>
-        <div class="faq-answer text-gray-700">Profissional com mais de 10 anos de atuação nos setores público e privado. Atuou em projetos como Petrobras, Rodoanel e Sabesp, com forte presença em áreas administrativas, de planejamento e análise de dados.</div>
-      </div>
-      <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
-        <h2 class="font-semibold">2. Em quais áreas você tem mais experiência prática?</h2>
-        <div class="faq-answer text-gray-700">Construção civil, planejamento físico-financeiro, controle orçamentário, suprimentos, logística, análise de dados e administração de contratos.</div>
-      </div>
-      <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
-        <h2 class="font-semibold">3. Como você se capacitou para atender diferentes setores?</h2>
-        <div class="faq-answer text-gray-700">
-          São 8.522 horas de cursos concluídos, distribuídas em áreas como Gestão (2.300h), Orçamentação (1.955h), BI/Dados (1.395h), Logística (627h), Tecnologia (581h), entre outras.  
-          <a class="text-blue-600 underline" href="https://docs.google.com/spreadsheets/d/147daYDvEp4ZnWnmSLSRamUK2Kkh-xREmHsz0YY6LUmE/edit?usp=sharing" target="_blank">📊 Ver base completa de cursos</a>
-        </div>
-      </div>
-      <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
-        <h2 class="font-semibold">4. Quais ferramentas você domina tecnicamente?</h2>
-        <div class="faq-answer text-gray-700">Power BI, Python (pandas, seaborn, matplotlib), Excel Avançado, Looker Studio, HTML, CSS, Google Sheets, GitHub Pages.</div>
-      </div>
-      <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
-        <h2 class="font-semibold">5. Você possui certificações reconhecidas?</h2>
-        <div class="faq-answer text-gray-700">Sim, mais de 150 certificações.  
-          <a class="text-blue-600 underline" href="https://www.credly.com/users/silvanio-gois/badges#credly" target="_blank">🎓 Ver certificações no Credly</a>
-        </div>
-      </div>
-      <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
-        <h2 class="font-semibold">6. Como você organiza e acompanha sua evolução?</h2>
-        <div class="faq-answer text-gray-700">Mantenho um painel de controle com metas, projeções e dados consolidados.  
-          <a class="text-blue-600 underline" href="https://docs.google.com/spreadsheets/d/147daYDvEp4ZnWnmSLSRamUK2Kkh-xREmHsz0YY6LUmE/edit?usp=sharing" target="_blank">📈 Acessar Painel</a>
-        </div>
-      </div>
-      <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
-        <h2 class="font-semibold">7. Onde encontro seus projetos práticos?</h2>
-        <div class="faq-answer text-gray-700">
-          <ul class="list-disc ml-4">
-            <li><a class="text-blue-600 underline" href="https://app.powerbi.com/view?r=eyJrIjoiMTBiOWNkMGYtYTAzYS00OTQ3LTk0YTUtY2NmNjg1YjUwNmExIiwidCI6IjJlYmQyYzU0LWY1ZDMtNGVmYi05ZGE3LWU4Yzk0YmQyMWQzOSJ9" target="_blank">Dashboard Power BI</a></li>
-            <li><a class="text-blue-600 underline" href="https://lookerstudio.google.com/reporting/4486fe19-9760-4f24-8c5f-e07fd1e23ad2/page/TAEKF" target="_blank">Looker Studio</a></li>
-            <li><a class="text-blue-600 underline" href="https://silvaniosg.github.io/AnaliseDedados/" target="_blank">Projetos Python</a></li>
-            <li><a class="text-blue-600 underline" href="https://www.silvaniogois.com.br/portfolio" target="_blank">Portfólio completo</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
-        <h2 class="font-semibold">8. Qual sua formação técnica e acadêmica?</h2>
-        <div class="faq-answer text-gray-700">Técnico em Administração (CRA-SP/CFA), Técnico em Edificações (CRT-SP/CFT), cursando Processos Gerenciais (conclusão: jun/2026).</div>
-      </div>
-      <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
-        <h2 class="font-semibold">9. Quais são seus diferenciais profissionais?</h2>
-        <div class="faq-answer text-gray-700">Organização, inteligência emocional, visão estratégica, entrega consistente. Eu planejo, executo e melhoro o que já funciona.</div>
-      </div>
-      <div class="faq-item p-4 bg-white rounded shadow hover:shadow-md">
-        <h2 class="font-semibold">10. Posso acessar seu currículo?</h2>
-        <div class="faq-answer text-gray-700">Sim, solicite diretamente pelo WhatsApp:  
-          <a class="text-green-600 underline" href="https://api.whatsapp.com/send?phone=5513988301094&text=Ol%C3%A1!%20Tudo%20bem%3F" target="_blank">📲 Solicitar via WhatsApp</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-10 text-center text-sm text-gray-600">
-      <p>📬 Contato: <a href="mailto:contato@silvaniogois.com.br" class="underline">contato@silvaniogois.com.br</a></p>
-      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/silvanio-gois-6667b918b/" class="underline text-blue-600">linkedin.com/in/silvanio-gois</a></p>
-      <p class="mt-4">© 2025 Silvânio Gois</p>
-    </div>
-  </div>
-
-  <script>
-    document.querySelectorAll('.faq-item').forEach(item => {
-      item.addEventListener('click', () => {
-        item.classList.toggle('open');
-      });
-    });
-  </script>
+<body>
+    <header>
+        <img src="Logo_br_Site.png" alt="Logo Silvânio Gois" />
+        <h1>Entrevista Profissional</h1>
+    </header>
+    <main>
+        <section class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <div class="faq-question">1. Pode contar um pouco sobre sua trajetória profissional?</div>
+                <div class="faq-answer">Claro! Minha jornada começou na área administrativa e evoluiu naturalmente para a inteligência analítica...</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">2. Como você estrutura seus projetos de análise de dados?</div>
+                <div class="faq-answer">Começo sempre com o entendimento do problema e coleta dos dados...</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">3. Você já aplicou seu conhecimento em projetos reais?</div>
+                <div class="faq-answer">Sim. Meus dashboards comerciais, de logística, suprimentos, RH e produção são todos publicados e utilizados na prática.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">4. O que mais te motiva profissionalmente?</div>
+                <div class="faq-answer">Ver resultado. Gosto de ver o dado saindo da planilha crua e se transformando em uma decisão inteligente.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">5. Onde posso ver seus projetos?</div>
+                <div class="faq-answer links">
+                    <a href="https://www.silvaniogois.com.br/portfolio/dashboard-comercial" target="_blank">Dashboard Comercial</a>
+                    <a href="https://www.silvaniogois.com.br/portfolio/dashboard-projetos-e-produção" target="_blank">Projetos e Produção</a>
+                    <a href="https://www.silvaniogois.com.br/portfolio/dashboard-suprimentos" target="_blank">Dashboard Suprimentos</a>
+                    <a href="https://www.silvaniogois.com.br/portfolio/dashboard-rh" target="_blank">Dashboard RH</a>
+                    <a href="https://www.silvaniogois.com.br/portfolio/dashboard-logística" target="_blank">Dashboard Logística</a>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMTBiOWNkMGYtYTAzYS00OTQ3LTk0YTUtY2NmNjg1YjUwNmExIiwidCI6IjJlYmQyYzU0LWY1ZDMtNGVmYi05ZGE3LWU4Yzk0YmQyMWQzOSJ9" target="_blank">Dashboard Power BI</a>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">6. Onde posso saber mais sobre sua formação e certificações?</div>
+                <div class="faq-answer links">
+                    <a href="https://www.silvaniogois.com.br/experiencia/trajetória" target="_blank">Minha Trajetória</a>
+                    <a href="https://www.silvaniogois.com.br/experiencia/atribuições" target="_blank">Minhas Atribuições</a>
+                    <a href="https://www.credly.com/users/silvanio-gois/badges#credly" target="_blank">Certificações (Credly)</a>
+                </div>
+            </div>
+        </section>
+        <section class="contato">
+            <h2>Contato</h2>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/silvanio-gois-6667b918b/" target="_blank">silvanio-gois-6667b918b</a></p>
+            <p><strong>Currículo via WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=5513988301094&text=Ol%C3%A1!%20Tudo%20bem%3F" target="_blank">Clique aqui para solicitar</a></p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Silvânio Gois. Todos os direitos reservados.
+    </footer>
+    <script>
+        document.querySelectorAll(".faq-question").forEach(q => {
+            q.addEventListener("click", () => {
+                const answer = q.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
 </body>
 </html>
