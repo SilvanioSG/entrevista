@@ -5,17 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entrevista Profissional - Silvânio Gois</title>
     <style>
-        body { font-family: Arial, sans-serif; background: #f9f9f9; color: #053a85; margin: 0; padding: 0; }
-        header { background: #295e80; color: #fff; padding: 1em; text-align: center; }
-        header img { max-height: 60px; }
-        main { padding: 2em; max-width: 900px; margin: auto; }
-        h2 { margin-top: 2em; border-bottom: 2px solid #ccc; padding-bottom: 0.3em; }
-        .faq-question { cursor: pointer; font-weight: bold; background: #e0e0e0; padding: 0.5em; border-radius: 5px; }
-        .faq-answer { display: none; padding: 0.5em 1em; background: #fff; border-left: 3px solid #333; }
-        .faq-item { margin-bottom: 1em; }
-        .links a { display: block; margin-top: 0.5em; color: #004a99; }
-        .sobre { background: #fff; padding: 1em 1.5em; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.05); margin-bottom: 2em; }
-        footer { background: #295e80; color: white; text-align: center; padding: 1em; margin-top: 2em; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f9;
+            color: #053a85;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #295e80;
+            color: #fff;
+            padding: 1.5em 1em;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            max-height: 60px;
+            margin-bottom: 0.5em;
+        }
+
+        main {
+            padding: 2em 1em;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            margin: 0.5em 0;
+        }
+
+        h2 {
+            margin-top: 2em;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 0.3em;
+        }
+
+        .sobre {
+            background: #fff;
+            padding: 1.5em 2em;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.05);
+            margin-bottom: 2em;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            background: #e7eef5;
+            padding: 0.75em 1em;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #d4e4f3;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0.75em 1em;
+            background: #ffffff;
+            border-left: 4px solid #295e80;
+            border-radius: 0 0 6px 6px;
+        }
+
+        .faq-item {
+            margin-bottom: 1em;
+        }
+
+        .links a {
+            display: block;
+            margin-top: 0.5em;
+            color: #004a99;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .links a:hover {
+            color: #002f66;
+        }
+
+        .contato a {
+            color: #004a99;
+            text-decoration: none;
+        }
+
+        .contato a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #295e80;
+            color: white;
+            text-align: center;
+            padding: 2em 1em 3em;
+            margin-top: 3em;
+            position: relative;
+        }
+
+        .return-btn {
+            display: inline-block;
+            background: #fff;
+            color: #295e80;
+            font-weight: bold;
+            padding: 0.8em 1.5em;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .return-btn:hover {
+            background: #295e80;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -26,7 +132,7 @@
     <main>
         <section class="sobre">
             <h2>Apresentação</h2>
-            <p>Minhas formações em Processos Gerenciais, Administração e Edificações me proporcionam uma visão ampla e prática para atuar em diversas frentes. Especialista em análise de dados, gestão de suprimentos e projetos, domino todo o ciclo de orçamentação e planejamento de obras. Meu objetivo é claro: transformar dados em decisões estratégicas, aplicando uma abordagem integrada para desenvolver soluções eficientes, inteligentes e que impulsionem o crescimento e a produtividade.</p>
+            <p>Minhas formações em Processos Gerenciais, Administração e Edificações me proporcionam uma visão ampla e prática para atuar em diversas frentes. Tenho domínio técnico em análise de dados, gestão de suprimentos e projetos, além de experiência sólida em todas as etapas do ciclo de orçamentação e planejamento de obras. Meu objetivo é claro: transformar dados em decisões estratégicas, aplicando uma abordagem integrada para desenvolver soluções eficientes, inteligentes e que impulsionem o crescimento e a produtividade.</p>
         </section>
 
         <section class="faq">
@@ -68,9 +174,12 @@
             <p><strong>Currículo via WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=5513988301094&text=Ol%C3%A1!%20Tudo%20bem%3F" target="_blank">Clique aqui para solicitar</a></p>
         </section>
     </main>
+
     <footer>
+        <a href="https://www.silvaniogois.com.br" class="return-btn">← Voltar para o Site</a><br><br>
         &copy; 2025 Silvânio Gois. Todos os direitos reservados.
     </footer>
+
     <script>
         document.querySelectorAll(".faq-question").forEach(q => {
             q.addEventListener("click", () => {
