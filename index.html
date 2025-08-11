@@ -1,199 +1,298 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entrevista Profissional - Silvânio Gois</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f4f6f9;
-            color: #053a85;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: #295e80;
-            color: #fff;
-            padding: 1.5em 1em;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header img {
-            max-height: 60px;
-            margin-bottom: 0.5em;
-        }
-
-        main {
-            padding: 2em 1em;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h1, h2 {
-            margin: 0.5em 0;
-        }
-
-        h2 {
-            margin-top: 2em;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 0.3em;
-        }
-
-        .sobre {
-            background: #fff;
-            padding: 1.5em 2em;
-            border-radius: 12px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.05);
-            margin-bottom: 2em;
-        }
-
-        .faq-question {
-            cursor: pointer;
-            font-weight: bold;
-            background: #e7eef5;
-            padding: 0.75em 1em;
-            border-radius: 6px;
-            transition: background 0.3s;
-        }
-
-        .faq-question:hover {
-            background: #d4e4f3;
-        }
-
-        .faq-answer {
-            display: none;
-            padding: 0.75em 1em;
-            background: #ffffff;
-            border-left: 4px solid #295e80;
-            border-radius: 0 0 6px 6px;
-        }
-
-        .faq-item {
-            margin-bottom: 1em;
-        }
-
-        .links a {
-            display: block;
-            margin-top: 0.5em;
-            color: #004a99;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .links a:hover {
-            color: #002f66;
-        }
-
-        .contato a {
-            color: #004a99;
-            text-decoration: none;
-        }
-
-        .contato a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background: #295e80;
-            color: white;
-            text-align: center;
-            padding: 2em 1em 3em;
-            margin-top: 3em;
-            position: relative;
-        }
-
-        .return-btn {
-            display: inline-block;
-            background: #fff;
-            color: #295e80;
-            font-weight: bold;
-            padding: 0.8em 1.5em;
-            border: none;
-            border-radius: 25px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-decoration: none;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        .return-btn:hover {
-            background: #295e80;
-            color: #fff;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Resumo de Currículo Profissional – Silvanio Gois</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #27628d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      background: #e0e0e0;
+      padding: 10px 0;
+    }
+    nav button {
+      background-color: #27628d;
+      color: white;
+      border: none;
+      margin: 0 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #27628d;
+      border-bottom: 2px solid #27628d;
+      padding-bottom: 5px;
+    }
+    canvas, #timeline {
+      max-width: 100%;
+      margin: auto;
+      display: block;
+    }
+    .chart-container {
+      width: 100%;
+      overflow-x: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .chart-box {
+      flex: 1 1 48%;
+      min-width: 300px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    .contato {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 1.1em;
+    }
+    .contato a {
+      color: #27628d;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .contato a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="Logo_br_Site.png" alt="Logo Silvânio Gois" onerror="this.style.display='none'" />
-        <h1>Autoentrevista Profissional</h1>
-    </header>
-    <main>
-        <section class="sobre">
-            <h2>Apresentação</h2>
-            <p>Técnico em Administração e Edificações, graduando em Processos Gerenciais, possuo uma base sólida e multifacetada. Essa combinação me confere uma visão ampla e prática para atuar em diversas frentes. Tenho domínio técnico em análise de dados, gestão de suprimentos e projetos, além de experiência sólida em todas as etapas do ciclo de orçamentação e planejamento de obras. Meu objetivo é claro: transformar dados em decisões estratégicas, aplicando uma abordagem integrada para desenvolver soluções eficientes, inteligentes e que impulsionem o crescimento e a produtividade.</p>
-        </section>
+  <header>
+    <h1>Resumo de Currículo Profissional</h1>
+    <p><strong>Objetivo:</strong> Atuar com excelência nas áreas de gestão, inteligência de mercado, logística e planejamento orçamentário, com base em indicadores estratégicos e visão analítica.</p>
+    <p><strong><a href="#contato" style="color: #27628d; font-weight: bold; text-decoration: none;">Entre em contato via <span style="text-decoration: underline;">WhatsApp</span></a></strong></p>
+  </header>
 
-        <section class="faq">
-            <h2>Perguntas Frequentes</h2>
-            <h5>Clique nas perguntas para expandir e retrair as respostas</h5>
-            <div class="faq-item"><div class="faq-question">1. Qual sua localidade?</div><div class="faq-answer">Cubatão, SP</div></div>
-            <div class="faq-item"><div class="faq-question">2. Qual seu foco profissional atual?</div><div class="faq-answer">Atuar nas áreas de Administração, Suprimentos, Orçamentação, Planejamento, Comercial ou Business Intelligence.</div></div>
-            <div class="faq-item"><div class="faq-question">3. Pode me dar um resumo da sua experiência?</div><div class="faq-answer">Experiência ampla em gestão administrativa, com resultados expressivos em construção civil, logística e petróleo e gás.</div></div>
-            <div class="faq-item"><div class="faq-question">4. Quais são suas principais habilidades?</div><div class="faq-answer">Negociação, Planejamento Estratégico, Análise de Dados, Gestão de Equipes, Orçamentação, Inteligência Emocional.</div></div>
-            <div class="faq-item"><div class="faq-question">5. Qual seu nível de inglês?</div><div class="faq-answer">Inglês básico (em desenvolvimento).</div></div>
-            <div class="faq-item"><div class="faq-question">6. Como você se descreve?</div><div class="faq-answer">Profissional comprometido com aprendizado contínuo e inovação, buscando sempre a excelência com equilíbrio pessoal.</div></div>
-            <div class="faq-item"><div class="faq-question">7. Pode contar um pouco sobre sua trajetória profissional?</div><div class="faq-answer">Minha jornada começou na área administrativa e evoluiu naturalmente para a inteligência analítica...</div></div>
-            <div class="faq-item"><div class="faq-question">8. Como você estrutura seus projetos de análise de dados?</div><div class="faq-answer">Começo sempre com o entendimento do problema e coleta dos dados...</div></div>
-            <div class="faq-item"><div class="faq-question">9. Você já aplicou seu conhecimento em projetos reais?</div><div class="faq-answer">Sim. Meus dashboards comerciais, de logística, suprimentos, RH e produção são todos publicados e utilizados na prática.</div></div>
-            <div class="faq-item"><div class="faq-question">10. O que mais te motiva profissionalmente?</div><div class="faq-answer">Ver resultado. Gosto de ver o dado saindo da planilha crua e se transformando em uma decisão inteligente.</div></div>
-            <div class="faq-item"><div class="faq-question">11. Onde posso ver seus projetos?</div>
-                <div class="faq-answer links">
-                    <a href="https://www.silvaniogois.com.br/projetos/gest%C3%A3o-de-obras" target="_blank">Gestão de Obras</a>
-                    <a href="https://www.silvaniogois.com.br/projetos/financeiro" target="_blank">Financeiro</a>
-                    <a href="https://www.silvaniogois.com.br/projetos/dashboard-comercial" target="_blank">Comercial</a>
-                    <a href="https://www.silvaniogois.com.br/projetos/dashboard-projetos-e-produção" target="_blank">Projetos e Produção</a>
-                    <a href="https://www.silvaniogois.com.br/projetos/dashboard-rh" target="_blank">Recursos Humanos</a>
-                    <a href="https://www.silvaniogois.com.br/projetos/dashboard-logística" target="_blank">Cadeia de Suprimentos e Logística</a>
-                    <a href="https://silvaniosg.github.io/analise_mega_sena/" target="_blank">Análise Crítica 1 - Sorteio da Mega Sena</a>
-                    <a href="https://silvaniosg.github.io/sorteios_mega_sena/" target="_blank">Análise Crítica 2 - Sorteio da Mega Sena</a>
-                </div>
-            </div>
-            <div class="faq-item"><div class="faq-question">12. Onde posso saber mais sobre sua formação e certificações?</div>
-                <div class="faq-answer links">
-                    <a href="https://silvaniosg.github.io/meu-relatorio-cursos" target="_blank">Meus Cursos e Meta</a>
-                    <a href="https://www.silvaniogois.com.br/experiencia/trajetória" target="_blank">Minha Trajetória</a>
-                    <a href="https://www.silvaniogois.com.br/experiencia/atribuições" target="_blank">Minhas Atribuições</a>
-                    <a href="https://www.credly.com/users/silvanio-gois/badges#credly" target="_blank">Certificações (Credly)</a>
-                    <a href="https://www.silvaniogois.com.br/quem-sou-eu" target="_blank">Quem Sou Eu</a>
-                    <a href="https://silvaniosg.github.io/lider_estrategico" target="_blank"> Meu Checklist de Gestor e Líder Estratégico</a>
-                    <a href="https://silvaniosg.github.io/planejamento_estrategico_empresarial" target="_blank"> Planejamento Estratégico Empresarial</a>
-                    <a href="https://silvaniosg.github.io/curriculo_digital_compacto" target="_blank"> Síntese de Currículo Digital</a>
-                    <a href="https://silvaniosg.github.io/sintese_pessoal_e_profissional" target="_blank"> Síntese Pessoal e Profissional</a>
-                </div>
-            </div>
-        </section>
+  <nav>
+    <button onclick="location.href='#kpis'">KPIs</button>
+    <button onclick="location.href='#grafico'">Competências</button>
+    <button onclick="location.href='#experiencia'">Experiência</button>
+    <button onclick="location.href='#curriculo'">Habilidades</button>
+    <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' })">Entre em contato</button>
+  </nav>
 
-        <section class="contato">
-            <h2>Contato</h2>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/silvanio-gois-6667b918b/" target="_blank">silvanio-gois-6667b918b</a></p>
-            <p><strong>Currículo via WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=5513988301094&text=Ol%C3%A1!%20Tudo%20bem%3F" target="_blank">Clique aqui para solicitar</a></p>
-        </section>
-    </main>
+  <section id="perfil">
+    <h2>Perfil Profissional</h2>
+    <p>Profissional com sólida experiência administrativa e técnica, atuando em setores estratégicos como construção civil, logística e petróleo e gás. Evolução comprovada de funções operacionais a posições de liderança, com foco em orçamentação, planejamento de obras, compras e gestão de pessoas. Forte habilidade em análise de dados e tomada de decisão, com destaque para o uso de ferramentas digitais para otimização de processos e redução de custos.</p>
+  </section>
 
-    <footer>
-        <a href="https://www.silvaniogois.com.br" class="return-btn"> Ir para o Site</a><br><br>
-        &copy; 2025 Silvânio Gois. Todos os direitos reservados.
-    </footer>
+  <section id="videoAutoentrevista" style="max-width: 640px; margin: 30px auto; text-align: center;">
+    <h2>Declaração Digital</h2>
+    <video width="100%" height="360" controls>
+      <source src="videoAutoentrevista.mp4" type="video/mp4">
+      Seu navegador não suporta a reprodução de vídeo.
+    </video>
+  </section>
 
-    <script>
-        document.querySelectorAll(".faq-question").forEach(q => {
-            q.addEventListener("click", () => {
-                const answer = q.nextElementSibling;
-                answer.style.display = answer.style.display === "block" ? "none" : "block";
-            });
-        });
-    </script>
+  <section id="kpis">
+    <h2>Indicadores Gerais (KPIs)</h2>
+    <ul>
+      <li><strong>Total de horas de capacitação:</strong> mais de 8.500 horas</li>
+      <li><strong>Áreas com maior carga:</strong> Gestão e Negócios, Orçamentação e Planejamento, Business Intelligence</li>
+      <li><strong>Certificações Técnicas:</strong> Edificações, Administração, em andamento Processos Gerenciais</li>
+      <li><strong>Destaques:</strong> Experiência em ambientes regulados, controle orçamentário e planejamento estratégico</li>
+    </ul>
+  </section>
+
+  <section id="grafico">
+    <h2>Distribuição de Horas por Categorias e Quantidade de Cursos Realizados por Ano</h2>
+    <div class="chart-container">
+      <div class="chart-box">
+        <canvas id="graficoBarras" height="300"></canvas>
+      </div>
+      <div class="chart-box">
+        <canvas id="graficoTemporal" height="300"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiência Profissional</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Função</th>
+          <th>Atividades</th>
+          <th>Duração</th>
+          <th>Segmento de Atuação (Público e Privado)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Orçamentista e Planejador</td>
+          <td>Elaboração de orçamentos detalhados, planejamento físico-financeiro, análise de viabilidade, utilização de Excel avançado e Power BI para tomada de decisão.</td>
+          <td>14 meses</td>
+          <td>Construção civil para órgãos públicos e empresas privadas.</td>
+        </tr>
+        <tr>
+          <td>Assistente Comercial</td>
+          <td>Elaboração de propostas técnicas e comerciais, suporte administrativo, controle documental e apoio às negociações com fornecedores.</td>
+          <td>11 meses</td>
+          <td>Área da Petrobras – atuação em contratos com empresas públicas e privadas (TAG e NTS).</td>
+        </tr>
+        <tr>
+          <td>Encarregado Administrativo</td>
+          <td>Gestão de contratos e compras, controle de almoxarifado, apoio a obras, coordenação de equipe e interface com departamentos contábeis e fiscais.</td>
+          <td>35 meses</td>
+          <td>Projetos de saneamento básico com foco em companhias públicas como Sabesp e empresas privadas do setor portuário.</td>
+        </tr>
+        <tr>
+          <td>Líder Administrativo</td>
+          <td>Coordenação de equipes multidisciplinares, controle de estoques e planejamento logístico em ambiente de alta demanda, com foco em melhoria contínua.</td>
+          <td>84 meses</td>
+          <td>Construção civil em terminais da Petrobras e obras de infraestrutura logística portuária (segmento misto).</td>
+        </tr>
+        <tr>
+          <td>Almoxarife / Comprador</td>
+          <td>Gestão de estoques, controle de recebimentos e inventários, logística de materiais e negociação com fornecedores.</td>
+          <td>30 meses</td>
+          <td>Área da Petrobras – refinarias e terminais (segmento público e privado).</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="curriculo">
+    <h2>Resumo Profissional</h2>
+    <p>Evoluí de Auxiliar a Líder Administrativo, transitando entre os níveis operacional, tático e estratégico, com atuação nos setores de construção civil, logística e petróleo e gás. Atuo com orçamentação, planejamento de obras, negociação com fornecedores, gestão de equipes e análise de dados, com foco na otimização de custos e melhoria contínua dos processos.</p>
+
+    <h3>Habilidades Profissionais</h3>
+    <ul>
+      <li>Orçamentação e planejamento estratégico</li>
+      <li>Gestão de obras e contratos</li>
+      <li>Business Intelligence (BI)</li>
+      <li>Negociação com fornecedores</li>
+      <li>Gestão de estoques e logística</li>
+      <li>Administração de equipes</li>
+      <li>Excel avançado e Power BI</li>
+      <li>Melhoria contínua de processos</li>
+      <li>Inteligência artificial aplicada à gestão e projetos</li>
+      <li>Inteligência emocional</li>
+    </ul>
+  </section>
+
+  <div class="contato" id="contato">
+    <p>Dúvidas ou mais informações? <a href="https://wa.me/5513988301094" target="_blank">WhatsApp</a><br>sg@silvaniogois.com.br</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctxBar = document.getElementById('graficoBarras').getContext('2d');
+    new Chart(ctxBar, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Gestão e Negócios',
+          'Orçamentação e Planejamento',
+          'Business Intelligence',
+          'Supply Chain e Logística',
+          'Tecnologia e Produção',
+          'Desenvolvimento Pessoal',
+          'Marketing Digital',
+          'Meio Ambiente',
+          'Segurança do Trabalho',
+          'Inglês Básico'
+        ],
+        datasets: [{
+          label: 'Horas por Área',
+          data: [2300, 1955, 1395, 627, 581, 516, 442, 434, 131, 130],
+          backgroundColor: '#27628d'
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: context => `${context.parsed.y} horas`
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: { display: true, text: 'Horas' }
+          },
+          x: {
+            title: { display: true, text: 'Área de Conhecimento' },
+            ticks: {
+              autoSkip: false,
+              maxRotation: 45,
+              minRotation: 45,
+              font: { size: 10 },
+              callback: function(value) {
+                const label = this.getLabelForValue(value);
+                return label.length > 20 ? label.slice(0, 20) + '…' : label;
+              }
+            }
+          }
+        }
+      }
+    });
+
+    const ctxLine = document.getElementById('graficoTemporal').getContext('2d');
+    new Chart(ctxLine, {
+      type: 'line',
+      data: {
+        labels: ['2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Cursos realizados por ano',
+          data: [23, 16, 1, 17, 46, 34],
+          borderColor: '#27628d',
+          backgroundColor: 'rgba(39, 98, 141, 0.2)',
+          tension: 0.3,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: { display: true, text: 'Cursos realizados' }
+          },
+          x: {
+            title: { display: true, text: 'Ano' }
+          }
+        }
+      }
+    });
+  </script>
 </body>
 </html>
