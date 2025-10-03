@@ -21,9 +21,51 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
 
-    header img {
-        max-height: 60px;
-        margin-bottom: 0.5em;
+    /* Novo estilo para o container do cabeçalho */
+    .header-content {
+        display: flex;
+        flex-direction: column; /* Empilha o conteúdo em telas pequenas */
+        align-items: center;
+        justify-content: center;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    /* Novo estilo para a imagem de perfil */
+    .profile-pic {
+        width: 120px; /* Tamanho da imagem */
+        height: 120px;
+        border-radius: 50%; /* Transforma em círculo */
+        object-fit: cover;
+        border: 4px solid #fff; /* Borda branca para destaque */
+        margin-bottom: 1em; /* Espaço abaixo da imagem */
+    }
+
+    /* Estilo para remover a imagem anterior e manter apenas o título */
+    header img[src="Logo_br_Site.png"] {
+        display: none;
+    }
+
+    header h1 {
+        margin: 0.25em 0; /* Ajuste o espaçamento do título */
+    }
+
+    /* Mídia query para telas maiores: imagem ao lado do texto, se houver espaço */
+    @media (min-width: 600px) {
+        .header-content {
+            flex-direction: row; /* Coloca lado a lado em telas maiores */
+            justify-content: space-around;
+            padding: 0 2em;
+        }
+
+        .profile-pic {
+            margin-right: 2em;
+            margin-bottom: 0;
+        }
+
+        .header-text {
+            text-align: left;
+        }
     }
 
     main {
@@ -155,8 +197,13 @@
 <body>
 
 <header>
-    <img src="Logo_br_Site.png" alt="Logo Silvânio Gois" onerror="this.style.display='none'" />
-    <h1>Autoentrevista Profissional</h1>
+    <div class="header-content">
+        <img src="SG_Executivo-removebg-preview.png" alt="Foto de Perfil Profissional de Silvânio Gois" class="profile-pic" />
+        <div class="header-text">
+            <img src="Logo_br_Site.png" alt="Logo Silvânio Gois" onerror="this.style.display='none'" />
+            <h1>FAQ Estratégico: Conheça Silvânio Gois</h1>
+        </div>
+    </div>
 </header>
 
 <main>
@@ -169,7 +216,6 @@
         <h2>Perguntas Frequentes</h2>
         <h5>Clique nas perguntas para expandir e retrair as respostas</h5>
 
-        <!-- Perguntas 1 a 10 -->
         <div class="faq-item">
             <div class="faq-question" role="button" aria-expanded="false" tabindex="0">1. Qual sua localidade? <span class="icon">+</span></div>
             <div class="faq-answer">Cubatão, SP — com disponibilidade para viagens e mudança, conforme a necessidade da empresa.</div>
@@ -211,7 +257,6 @@
             <div class="faq-answer">Ver resultados concretos. Gosto de transformar dados brutos em informações estratégicas que influenciem decisões e gerem impacto positivo. Esse processo me motiva a buscar soluções cada vez mais inteligentes e eficazes.</div>
         </div>
 
-        <!-- Perguntas 11 a 13 (destaque azul escuro e letras brancas) -->
         <div class="faq-item">
             <div class="faq-question destaque" role="button" aria-expanded="false" tabindex="0">11. Onde posso ver seus projetos? <span class="icon">+</span></div>
             <div class="faq-answer links">
@@ -262,7 +307,6 @@
             </div>
         </div>
 
-        <!-- Perguntas 14 a 18 -->
         <div class="faq-item">
             <div class="faq-question" role="button" aria-expanded="false" tabindex="0">14. Como você mantém-se atualizado em tendências do mercado e tecnologia? <span class="icon">+</span></div>
             <div class="faq-answer">Através de cursos, webinars, leitura de relatórios especializados e prática constante em projetos reais.</div>
@@ -275,7 +319,7 @@
 
         <div class="faq-item">
             <div class="faq-question" role="button" aria-expanded="false" tabindex="0">16. Qual foi o projeto mais desafiador que você realizou? <span class="icon">+</span></div>
-            <div class="faq-answer">Desenvolver dashboards estratégicos para integrar múltiplas áreas (RH, logística, comercial) e permitir decisões em tempo real foi um dos maiores desafios, exigindo organização e visão sistêmica.</div>
+            <div class="faq-answer">Desenvolvi dashboards estratégicos para integrar múltiplas áreas (RH, logística, comercial) e permitir decisões em tempo real foi um dos maiores desafios, exigindo organização e visão sistêmica.</div>
         </div>
 
         <div class="faq-item">
