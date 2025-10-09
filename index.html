@@ -1,368 +1,69 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Entrevista Profissional - Silvânio Gois</title>
-<style>
-    body {
-        font-family: 'Segoe UI', sans-serif;
-        background: #f4f6f9;
-        color: #053a85;
-        margin: 0;
-        padding: 0;
-    }
-
-    header {
-        background: linear-gradient(135deg, #295e80, #1d3f55);
-        color: #fff;
-        padding: 1.5em 1em;
-        text-align: center;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Novo estilo para o container do cabeçalho */
-    .header-content {
-        display: flex;
-        flex-direction: column; /* Empilha o conteúdo em telas pequenas */
-        align-items: center;
-        justify-content: center;
-        max-width: 900px;
-        margin: auto;
-    }
-
-    /* Novo estilo para a imagem de perfil */
-    .profile-pic {
-        width: 120px; /* Tamanho da imagem */
-        height: 120px;
-        border-radius: 50%; /* Transforma em círculo */
-        object-fit: cover;
-        border: 4px solid #fff; /* Borda branca para destaque */
-        margin-bottom: 1em; /* Espaço abaixo da imagem */
-    }
-
-    /* Estilo para remover a imagem anterior e manter apenas o título */
-    header img[src="Logo_br_Site.png"] {
-        display: none;
-    }
-
-    header h1 {
-        margin: 0.25em 0; /* Ajuste o espaçamento do título */
-    }
-
-    /* Mídia query para telas maiores: imagem ao lado do texto, se houver espaço */
-    @media (min-width: 600px) {
-        .header-content {
-            flex-direction: row; /* Coloca lado a lado em telas maiores */
-            justify-content: space-around;
-            padding: 0 2em;
-        }
-
-        .profile-pic {
-            margin-right: 2em;
-            margin-bottom: 0;
-        }
-
-        .header-text {
-            text-align: left;
-        }
-    }
-
-    main {
-        padding: 2em 1em;
-        max-width: 900px;
-        margin: auto;
-    }
-
-    h2 {
-        margin-top: 2em;
-        border-bottom: 2px solid #ccc;
-        padding-bottom: 0.3em;
-    }
-
-    .sobre {
-        background: #fff;
-        padding: 1.5em 2em;
-        border-radius: 12px;
-        box-shadow: 0 0 12px rgba(0,0,0,0.05);
-        margin-bottom: 2em;
-        line-height: 1.6;
-    }
-
-    .faq-item {
-        margin-bottom: 1em;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        background: #fff;
-    }
-
-    .faq-question {
-        cursor: pointer;
-        font-weight: bold;
-        background: #e7eef5;
-        padding: 0.85em 1em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: background 0.3s;
-    }
-
-    .faq-question:hover {
-        background: #d4e4f3;
-    }
-
-    .faq-question.destaque {
-        background-color: #053a85;
-        color: #fff;
-    }
-
-    .faq-answer {
-        max-height: 0;
-        overflow: hidden;
-        padding: 0 1em;
-        line-height: 1.5;
-        background: #fff;
-        border-left: 4px solid #295e80;
-        transition: max-height 0.4s ease, padding 0.4s ease, opacity 0.4s ease;
-        opacity: 0;
-    }
-
-    .faq-item.active .faq-answer {
-        padding: 0.85em 1em;
-        max-height: 1000px;
-        opacity: 1;
-    }
-
-    .icon {
-        font-weight: bold;
-        font-size: 1.2em;
-        transition: transform 0.3s;
-    }
-
-    .faq-item.active .icon {
-        transform: rotate(180deg);
-    }
-
-    .links a {
-        display: block;
-        margin-top: 0.5em;
-        color: #004a99;
-        text-decoration: none;
-        transition: color 0.2s;
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Entrevista Profissional - Silvânio Gois</title><style>    body {        font-family: 'Segoe UI', sans-serif;        background: #f4f6f9;        color: #053a85;        margin: 0;        padding: 0;    }
+    header {        background: linear-gradient(135deg, #295e80, #1d3f55);        color: #fff;        padding: 1.5em 1em;        text-align: center;        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);    }
+    /* Novo estilo para o container do cabeçalho */    .header-content {        display: flex;        flex-direction: column; /* Empilha o conteúdo em telas pequenas */        align-items: center;        justify-content: center;        max-width: 900px;        margin: auto;    }
+    /* Novo estilo para a imagem de perfil */    .profile-pic {        width: 120px; /* Tamanho da imagem */        height: 120px;        border-radius: 50%; /* Transforma em círculo */        object-fit: cover;        border: 4px solid #fff; /* Borda branca para destaque */        margin-bottom: 1em; /* Espaço abaixo da imagem */    }
+    /* Estilo para remover a imagem anterior e manter apenas o título */    header img[src="Logo_br_Site.png"] {        display: none;    }
+    header h1 {        margin: 0.25em 0; /* Ajuste o espaçamento do título */    }
+    /* Mídia query para telas maiores: imagem ao lado do texto, se houver espaço */    @media (min-width: 600px) {        .header-content {            flex-direction: row; /* Coloca lado a lado em telas maiores */            justify-content: space-around;            padding: 0 2em;        }
+        .profile-pic {            margin-right: 2em;            margin-bottom: 0;        }
+        .header-text {            text-align: left;        }    }
+    main {        padding: 2em 1em;        max-width: 900px;        margin: auto;    }
+    h2 {        margin-top: 2em;        border-bottom: 2px solid #ccc;        padding-bottom: 0.3em;    }
+    .sobre {        background: #fff;        padding: 1.5em 2em;        border-radius: 12px;        box-shadow: 0 0 12px rgba(0,0,0,0.05);        margin-bottom: 2em;        line-height: 1.6;    }
+    /* NOVO: Estilo para tornar o container de vídeo responsivo (16:9) */
+    .video-container {
         position: relative;
+        padding-bottom: 56.25%; /* Proporção 16:9 */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin-top: 1em; /* Espaço após o título h2 */
     }
-
-    .links a::after {
-        content: "";
+    .video-container video {
         position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: 0;
+        top: 0;
         left: 0;
-        background-color: #004a99;
-        transition: width 0.3s;
-    }
-
-    .links a:hover::after {
         width: 100%;
+        height: 100%;
+        border: 0;
     }
-
-    footer {
-        background: #295e80;
-        color: white;
-        text-align: center;
-        padding: 2em 1em 3em;
-        margin-top: 3em;
-    }
-
-    .return-btn {
-        display: inline-block;
-        background: #fff;
-        color: #295e80;
-        font-weight: bold;
-        padding: 0.8em 1.5em;
-        border-radius: 25px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        text-decoration: none;
-        transition: background 0.3s, color 0.3s;
-    }
-
-    .return-btn:hover {
-        background: #295e80;
-        color: #fff;
-    }
-</style>
-</head>
-<body>
-
-<header>
-    <div class="header-content">
-        <img src="SG_Executivo-removebg-preview.png" alt="Foto de Perfil Profissional de Silvânio Gois" class="profile-pic" />
-        <div class="header-text">
-            <img src="Logo_br_Site.png" alt="Logo Silvânio Gois" onerror="this.style.display='none'" />
-            <h1>FAQ Estratégico: Conheça Silvânio Gois</h1>
+    .faq-item {        margin-bottom: 1em;        border-radius: 8px;        overflow: hidden;        box-shadow: 0 2px 5px rgba(0,0,0,0.05);        background: #fff;    }
+    .faq-question {        cursor: pointer;        font-weight: bold;        background: #e7eef5;        padding: 0.85em 1em;        display: flex;        justify-content: space-between;        align-items: center;        transition: background 0.3s;    }
+    .faq-question:hover {        background: #d4e4f3;    }
+    .faq-question.destaque {        background-color: #053a85;        color: #fff;    }
+    .faq-answer {        max-height: 0;        overflow: hidden;        padding: 0 1em;        line-height: 1.5;        background: #fff;        border-left: 4px solid #295e80;        transition: max-height 0.4s ease, padding 0.4s ease, opacity 0.4s ease;        opacity: 0;    }
+    .faq-item.active .faq-answer {        padding: 0.85em 1em;        max-height: 1000px;        opacity: 1;    }
+    .icon {        font-weight: bold;        font-size: 1.2em;        transition: transform 0.3s;    }
+    .faq-item.active .icon {        transform: rotate(180deg);    }
+    .links a {        display: block;        margin-top: 0.5em;        color: #004a99;        text-decoration: none;        transition: color 0.2s;        position: relative;    }
+    .links a::after {        content: "";        position: absolute;        width: 0;        height: 2px;        bottom: 0;        left: 0;        background-color: #004a99;        transition: width 0.3s;    }
+    .links a:hover::after {        width: 100%;    }
+    footer {        background: #295e80;        color: white;        text-align: center;        padding: 2em 1em 3em;        margin-top: 3em;    }
+    .return-btn {        display: inline-block;        background: #fff;        color: #295e80;        font-weight: bold;        padding: 0.8em 1.5em;        border-radius: 25px;        box-shadow: 0 4px 8px rgba(0,0,0,0.1);        text-decoration: none;        transition: background 0.3s, color 0.3s;    }
+    .return-btn:hover {        background: #295e80;        color: #fff;    }</style></head><body>
+<header>    <div class="header-content">        <img src="SG_Executivo-removebg-preview.png" alt="Foto de Perfil Profissional de Silvânio Gois" class="profile-pic" />        <div class="header-text">            <img src="Logo_br_Site.png" alt="Logo Silvânio Gois" onerror="this.style.display='none'" />            <h1>FAQ Estratégico: Conheça Silvânio Gois</h1>        </div>    </div></header>
+<main>    <section class="sobre">
+        <h2>Apresentação em video gerado por Inteligência Artificial</h2>
+        <div class="video-container">
+            <video controls preload="metadata">
+                <source src="videoAutoentrevistaFAQ.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
         </div>
-    </div>
-</header>
-
-<main>
-    <section class="sobre">
-        <h2>Apresentação</h2>
-        <p>Minhas formações em Processos Gerenciais, Administração e Edificações me proporcionam uma visão ampla e prática para atuar em diversas frentes. Tenho domínio técnico em análise de dados, gestão de suprimentos e projetos, além de experiência sólida em todas as etapas do ciclo de orçamentação e planejamento de obras. Meu objetivo é claro: transformar dados em decisões estratégicas, aplicando uma abordagem integrada para desenvolver soluções eficientes, inteligentes e que impulsionem o crescimento e a produtividade.</p>
     </section>
-
-    <section class="faq">
-        <h2>Perguntas Frequentes</h2>
-        <h5>Clique nas perguntas para expandir e retrair as respostas</h5>
-
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">1. Qual sua localidade? <span class="icon">+</span></div>
-            <div class="faq-answer">Cubatão, SP — com disponibilidade para viagens e mudança, conforme a necessidade da empresa.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">2. Qual seu foco profissional atual? <span class="icon">+</span></div>
-            <div class="faq-answer">Atuar nas áreas de Administração, Suprimentos, Orçamentação, Planejamento, Comercial ou Business Intelligence, buscando otimização de processos e resultados estratégicos.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">3. Pode me dar um resumo da sua experiência? <span class="icon">+</span></div>
-            <div class="faq-answer">Experiência sólida em gestão administrativa, com resultados expressivos nos setores de construção civil, logística e petróleo e gás, sempre com foco em desempenho e inovação.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">4. Quais são suas principais habilidades? <span class="icon">+</span></div>
-            <div class="faq-answer">Negociação, Planejamento Estratégico, Análise de Dados, Gestão de Equipes, Orçamentação e Inteligência Emocional.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">5. Qual seu nível de inglês? <span class="icon">+</span></div>
-            <div class="faq-answer">Inglês básico, atualmente em desenvolvimento com foco no uso prático no ambiente profissional.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">6. Como você se descreve? <span class="icon">+</span></div>
-            <div class="faq-answer">Profissional comprometido, adaptável e curioso, sempre buscando aprendizado contínuo e equilíbrio entre alta performance e qualidade de vida.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">7. Pode contar um pouco sobre sua trajetória profissional? <span class="icon">+</span></div>
-            <div class="faq-answer">Iniciei na área administrativa e, ao longo do tempo, evoluí para projetos estratégicos, como inteligência de dados e planejamento empresarial. Essa transição foi impulsionada pela minha curiosidade em entender como a análise de informações pode transformar resultados.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">8. Como você estrutura seus projetos de análise de dados? <span class="icon">+</span></div>
-            <div class="faq-answer">Primeiro, entendo o problema ou objetivo e converso com os envolvidos para alinhar expectativas. Depois, faço a coleta, limpeza e organização dos dados, garantindo consistência e confiabilidade. Em seguida, aplico análises e crio visualizações que traduzam números em informações claras e úteis. Finalizo validando os resultados com os usuários e ajustando para máxima eficácia.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">9. Você já aplicou seu conhecimento em projetos reais? <span class="icon">+</span></div>
-            <div class="faq-answer">Sim. Desenvolvi dashboards e relatórios para áreas como comercial, logística, suprimentos, RH e produção, todos utilizados ativamente para tomada de decisões e monitoramento de indicadores.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">10. O que mais te motiva profissionalmente? <span class="icon">+</span></div>
-            <div class="faq-answer">Ver resultados concretos. Gosto de transformar dados brutos em informações estratégicas que influenciem decisões e gerem impacto positivo. Esse processo me motiva a buscar soluções cada vez mais inteligentes e eficazes.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question destaque" role="button" aria-expanded="false" tabindex="0">11. Onde posso ver seus projetos? <span class="icon">+</span></div>
-            <div class="faq-answer links">
-                <a href="https://www.silvaniogois.com.br/projetos" target="_blank">Portfólio de Projetos</a>
-                <a href="https://www.silvaniogois.com.br/projetos/gest%C3%A3o-de-obras" target="_blank">Gestão de Obras</a>
-                <a href="https://www.silvaniogois.com.br/projetos/financeiro" target="_blank">Financeiro</a>
-                <a href="https://www.silvaniogois.com.br/projetos/dashboard-rh" target="_blank">Recursos Humanos</a>
-                <a href="https://www.silvaniogois.com.br/projetos/dashboard-comercial" target="_blank">Comercial</a>
-                <a href="https://www.silvaniogois.com.br/projetos/dashboard-projetos-e-produ%C3%A7%C3%A3o" target="_blank">Projetos e Produções</a>
-                <a href="https://www.silvaniogois.com.br/projetos/dashboard-log%C3%ADstica" target="_blank">Cadeia de Suprimentos e Logística</a>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question destaque" role="button" aria-expanded="false" tabindex="0">12. Onde posso saber mais sobre sua formação e certificações? <span class="icon">+</span></div>
-            <div class="faq-answer links">
-                <a href="https://www.silvaniogois.com.br/quem-sou-eu" target="_blank">Quem Sou Eu</a>
-                <a href="https://www.silvaniogois.com.br/gestao-estrategica" target="_blank">Gestão Estratégica</a>
-                <a href="https://www.silvaniogois.com.br/experiencia" target="_blank">Meu Aprendizado</a>
-                <a href="https://silvaniosg.github.io/meu-relatorio-cursos" target="_blank">Meus Cursos e Metas</a>
-                <a href="https://silvaniosg.github.io/curriculo_digital_compacto" target="_blank">Síntese de Currículo Digital Interativo</a>
-                <a href="https://silvaniosg.github.io/sintese_pessoal_e_profissional/" target="_blank">Síntese Pessoal e Profissional</a>
-                <a href="https://www.silvaniogois.com.br/experiencia/trajet%C3%B3ria" target="_blank">Minha Trajetória</a>
-                <a href="https://www.silvaniogois.com.br/experiencia/atribui%C3%A7%C3%B5es" target="_blank">Minhas Atribuições</a>
-                <a href="https://www.credly.com/users/silvanio-gois/badges#credly" target="_blank">Credly - Carteira de Medalhas</a>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question destaque" role="button" aria-expanded="false" tabindex="0">13. Quer acessar análises raras que revelam padrões invisíveis ao olhar comum? <span class="icon">+</span></div>
-            <div class="faq-answer links">
-                <a href="https://silvaniosg.github.io/administracao_na_pratica/" target="_blank">Administração na Prática</a>
-                <a href="https://silvaniosg.github.io/estudo_maquiavel_gestao/" target="_blank">Maquiavel aplicado à gestão — estudo prático</a>
-                <a href="https://silvaniosg.github.io/aprendizado_formal_vs_aprendizado_real/" target="_blank">Aprendizado Formal vs Aprendizado Real</a>
-                <a href="https://silvaniosg.github.io/produtividade_no_brasil/" target="_blank">Análise Executiva — Produtividade no Brasil</a>
-                <a href="https://silvaniosg.github.io/estrategia_adaptada/" target="_blank">Estratégia em Cenários Modernos de Liderança e Gestão</a>
-                <a href="https://silvaniosg.github.io/mapa_estrategico_de_competencias/" target="_blank">Gestão Vertical: Painel Estratégico de Alta Performance</a>
-                <a href="https://silvaniosg.github.io/inteligencia_emocional_segmento_corporativo/" target="_blank">Aplicação de Inteligência Emocional no Segmento Corporativo</a>
-                <a href="https://silvaniosg.github.io/tendencia_diploma_vs_habilidade/" target="_blank">Tendência: Diploma vs Habilidade</a>
-                <a href="https://silvaniosg.github.io/recrutamento_e_selecao/" target="_blank">Contratações e Enviesamento em Corporações</a>
-                <a href="https://silvaniosg.github.io/procrastinacao_no_ambiente_corporativo/" target="_blank">Procrastinação no Ambiente Corporativo</a>
-                <a href="https://silvaniosg.github.io/mapa_de_mobilidade_social/" target="_blank">Mapa de Mobilidade Social</a>
-                <a href="https://silvaniosg.github.io/perfil_de_lider/" target="_blank">Liderança Clássica Aplicada ao Mundo Corporativo Moderno</a>
-                <a href="https://silvaniosg.github.io/lider_estrategico/" target="_blank">Gestor e Líder Estratégico</a>
-                <a href="https://silvaniosg.github.io/planejamento_estrategico_empresarial/" target="_blank">Planejamento Estratégico Empresarial</a>
-                <a href="https://silvaniosg.github.io/analise_mega_sena/" target="_blank">Análise da Mega Sena</a>
-                <a href="https://silvaniosg.github.io/sorteios_mega_sena/" target="_blank">Relatório Crítico: Dois Sorteios</a>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">14. Como você mantém-se atualizado em tendências do mercado e tecnologia? <span class="icon">+</span></div>
-            <div class="faq-answer">Através de cursos, webinars, leitura de relatórios especializados e prática constante em projetos reais.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">15. Qual é a sua abordagem para resolver problemas complexos? <span class="icon">+</span></div>
-            <div class="faq-answer">Analiso dados, identifico padrões, proponho soluções testáveis e colaboro com a equipe para implementar decisões estratégicas, minimizando riscos e maximizando resultados.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">16. Qual foi o projeto mais desafiador que você realizou? <span class="icon">+</span></div>
-            <div class="faq-answer">Desenvolvi dashboards estratégicos para integrar múltiplas áreas (RH, logística, comercial) e permitir decisões em tempo real foi um dos maiores desafios, exigindo organização e visão sistêmica.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">17. Como você aplica inteligência emocional no ambiente corporativo? <span class="icon">+</span></div>
-            <div class="faq-answer">Equilibrando pressão e prioridades, ouvindo a equipe, comunicando expectativas claramente e mantendo foco em soluções e resultados.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">18. Qual é seu diferencial competitivo? <span class="icon">+</span></div>
-            <div class="faq-answer">A combinação de experiência prática, conhecimento analítico, visão estratégica e curiosidade constante para descobrir padrões e oportunidades únicas.</div>
-        </div>
-
+    <section class="faq">        <h2>Perguntas Frequentes</h2>        <h5>Clique nas perguntas para expandir e retrair as respostas</h5>
+        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">1. Qual sua localidade? <span class="icon">+</span></div>            <div class="faq-answer">Cubatão, SP — com disponibilidade para viagens e mudança, conforme a necessidade da empresa.</div>        </div>        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">2. Qual seu foco profissional atual? <span class="icon">+</span></div>            <div class="faq-answer">Atuar nas áreas de Administração, Suprimentos, Orçamentação, Planejamento, Comercial ou Business Intelligence, buscando otimização de processos e resultados estratégicos.</div>        </div>        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">3. Pode me dar um resumo da sua experiência? <span class="icon">+</span></div>            <div class="faq-answer">Experiência sólida em gestão administrativa, com resultados expressivos nos setores de construção civil, logística e petróleo e gás, sempre com foco em desempenho e inovação.</div>        </div>        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">4. Quais são suas principais habilidades? <span class="icon">+</span></div>            <div class="faq-answer">Negociação, Planejamento Estratégico, Análise de Dados, Gestão de Equipes, Orçamentação e Inteligência Emocional.</div>        </div>        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">5. Qual seu nível de inglês? <span class="icon">+</span></div>            <div class="faq-answer">Inglês básico, atualmente em desenvolvimento com foco no uso prático no ambiente profissional.</div>        </div>        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">6. Como você se descreve? <span class="icon">+</span></div>            <div class="faq-answer">Profissional comprometido, adaptável e curioso, sempre buscando aprendizado contínuo e equilíbrio entre alta performance e qualidade de vida.</div>        </div>        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">7. Pode contar um pouco sobre sua trajetória profissional? <span class="icon">+</span></div>            <div class="faq-answer">Iniciei na área administrativa e, ao longo do tempo, evoluí para projetos estratégicos, como inteligência de dados e planejamento empresarial. Essa transição foi impulsionada pela minha curiosidade em entender como a análise de informações pode transformar resultados.</div>        </div>        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">8. Como você estrutura seus projetos de análise de dados? <span class="icon">+</span></div>            <div class="faq-answer">Primeiro, entendo o problema ou objetivo e converso com os envolvidos para alinhar expectativas. Depois, faço a coleta, limpeza e organização dos dados, garantindo consistência e confiabilidade. Em seguida, aplico análises e crio visualizações que traduzam números em informações claras e úteis. Finalizo validando os resultados com os usuários e ajustando para máxima eficácia.</div>        </div>        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">9. Você já aplicou seu conhecimento em projetos reais? <span class="icon">+</span></div>            <div class="faq-answer">Sim. Desenvolvi dashboards e relatórios para áreas como comercial, logística, suprimentos, RH e produção, todos utilizados ativamente para tomada de decisões e monitoramento de indicadores.</div>        </div>        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">10. O que mais te motiva profissionalmente? <span class="icon">+</span></div>            <div class="faq-answer">Ver resultados concretos. Gosto de transformar dados brutos em informações estratégicas que influenciem decisões e gerem impacto positivo. Esse processo me motiva a buscar soluções cada vez mais inteligentes e eficazes.</div>        </div>
+        <div class="faq-item">            <div class="faq-question destaque" role="button" aria-expanded="false" tabindex="0">11. Onde posso ver seus projetos? <span class="icon">+</span></div>            <div class="faq-answer links">                <a href="https://www.silvaniogois.com.br/projetos" target="_blank">Portfólio de Projetos</a>                <a href="https://www.silvaniogois.com.br/projetos/gest%C3%A3o-de-obras" target="_blank">Gestão de Obras</a>                <a href="https://www.silvaniogois.com.br/projetos/financeiro" target="_blank">Financeiro</a>                <a href="https://www.silvaniogois.com.br/projetos/dashboard-rh" target="_blank">Recursos Humanos</a>                <a href="https://www.silvaniogois.com.br/projetos/dashboard-comercial" target="_blank">Comercial</a>                <a href="https://www.silvaniogois.com.br/projetos/dashboard-projetos-e-produ%C3%A7%C3%A3o" target="_blank">Projetos e Produções</a>                <a href="https://www.silvaniogois.com.br/projetos/dashboard-log%C3%ADstica" target="_blank">Cadeia de Suprimentos e Logística</a>            </div>        </div>
+        <div class="faq-item">            <div class="faq-question destaque" role="button" aria-expanded="false" tabindex="0">12. Onde posso saber mais sobre sua formação e certificações? <span class="icon">+</span></div>            <div class="faq-answer links">                <a href="https://www.silvaniogois.com.br/quem-sou-eu" target="_blank">Quem Sou Eu</a>                <a href="https://www.silvaniogois.com.br/gestao-estrategica" target="_blank">Gestão Estratégica</a>                <a href="https://www.silvaniogois.com.br/experiencia" target="_blank">Meu Aprendizado</a>                <a href="https://silvaniosg.github.io/meu-relatorio-cursos" target="_blank">Meus Cursos e Metas</a>                <a href="https://silvaniosg.github.io/curriculo_digital_compacto" target="_blank">Síntese de Currículo Digital Interativo</a>                <a href="https://silvaniosg.github.io/sintese_pessoal_e_profissional/" target="_blank">Síntese Pessoal e Profissional</a>                <a href="https://www.silvaniogois.com.br/experiencia/trajet%C3%B3ria" target="_blank">Minha Trajetória</a>                <a href="https://www.silvaniogois.com.br/experiencia/atribui%C3%A7%C3%B5es" target="_blank">Minhas Atribuições</a>                <a href="https://www.credly.com/users/silvanio-gois/badges#credly" target="_blank">Credly - Carteira de Medalhas</a>            </div>        </div>
+        <div class="faq-item">            <div class="faq-question destaque" role="button" aria-expanded="false" tabindex="0">13. Quer acessar análises raras que revelam padrões invisíveis ao olhar comum? <span class="icon">+</span></div>            <div class="faq-answer links">                <a href="https://silvaniosg.github.io/administracao_na_pratica/" target="_blank">Administração na Prática</a>                <a href="https://silvaniosg.github.io/estudo_maquiavel_gestao/" target="_blank">Maquiavel aplicado à gestão — estudo prático</a>                <a href="https://silvaniosg.github.io/aprendizado_formal_vs_aprendizado_real/" target="_blank">Aprendizado Formal vs Aprendizado Real</a>                <a href="https://silvaniosg.github.io/produtividade_no_brasil/" target="_blank">Análise Executiva — Produtividade no Brasil</a>                <a href="https://silvaniosg.github.io/estrategia_adaptada/" target="_blank">Estratégia em Cenários Modernos de Liderança e Gestão</a>                <a href="https://silvaniosg.github.io/mapa_estrategico_de_competencias/" target="_blank">Gestão Vertical: Painel Estratégico de Alta Performance</a>                <a href="https://silvaniosg.github.io/inteligencia_emocional_segmento_corporativo/" target="_blank">Aplicação de Inteligência Emocional no Segmento Corporativo</a>                <a href="https://silvaniosg.github.io/tendencia_diploma_vs_habilidade/" target="_blank">Tendência: Diploma vs Habilidade</a>                <a href="https://silvaniosg.github.io/recrutamento_e_selecao/" target="_blank">Contratações e Enviesamento em Corporações</a>                <a href="https://silvaniosg.github.io/procrastinacao_no_ambiente_corporativo/" target="_blank">Procrastinação no Ambiente Corporativo</a>                <a href="https://silvaniosg.github.io/mapa_de_mobilidade_social/" target="_blank">Mapa de Mobilidade Social</a>                <a href="https://silvaniosg.github.io/perfil_de_lider/" target="_blank">Liderança Clássica Aplicada ao Mundo Corporativo Moderno</a>                <a href="https://silvaniosg.github.io/lider_estrategico/" target="_blank">Gestor e Líder Estratégico</a>                <a href="https://silvaniosg.github.io/planejamento_estrategico_empresarial/" target="_blank">Planejamento Estratégico Empresarial</a>                <a href="https://silvaniosg.github.io/analise_mega_sena/" target="_blank">Análise da Mega Sena</a>                <a href="https://silvaniosg.github.io/sorteios_mega_sena/" target="_blank">Relatório Crítico: Dois Sorteios</a>            </div>        </div>
+        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">14. Como você mantém-se atualizado em tendências do mercado e tecnologia? <span class="icon">+</span></div>            <div class="faq-answer">Através de cursos, webinars, leitura de relatórios especializados e prática constante em projetos reais.</div>        </div>
+        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">15. Qual é a sua abordagem para resolver problemas complexos? <span class="icon">+</span></div>            <div class="faq-answer">Analiso dados, identifico padrões, proponho soluções testáveis e colaboro com a equipe para implementar decisões estratégicas, minimizando riscos e maximizando resultados.</div>        </div>
+        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">16. Qual foi o projeto mais desafiador que você realizou? <span class="icon">+</span></div>            <div class="faq-answer">Desenvolvi dashboards estratégicos para integrar múltiplas áreas (RH, logística, comercial) e permitir decisões em tempo real foi um dos maiores desafios, exigindo organização e visão sistêmica.</div>        </div>
+        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">17. Como você aplica inteligência emocional no ambiente corporativo? <span class="icon">+</span></div>            <div class="faq-answer">Equilibrando pressão e prioridades, ouvindo a equipe, comunicando expectativas claramente e mantendo foco em soluções e resultados.</div>        </div>
+        <div class="faq-item">            <div class="faq-question" role="button" aria-expanded="false" tabindex="0">18. Qual é seu diferencial competitivo? <span class="icon">+</span></div>            <div class="faq-answer">A combinação de experiência prática, conhecimento analítico, visão estratégica e curiosidade constante para descobrir padrões e oportunidades únicas.</div>        </div>
     </section>
-
-    <section class="contato">
-        <h2>Contato</h2>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/silvanio-gois-6667b918b/" target="_blank">silvanio-gois-6667b918b</a></p>
-        <p><strong>Currículo via WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=5513988301094&text=Ol%C3%A1!%20Tudo%20bem%3F" target="_blank">Clique aqui para solicitar</a></p>
-    </section>
-</main>
-
-<footer>
-    <a href="https://www.silvaniogois.com.br" class="return-btn">Voltar para o Site</a><br><br>
-    &copy; 2025 Silvânio Gois. Todos os direitos reservados.
-</footer>
-
-<script>
-    document.querySelectorAll(".faq-question").forEach(q => {
-        q.addEventListener("click", () => {
-            const item = q.parentElement;
-            item.classList.toggle("active");
-            const icon = q.querySelector(".icon");
-            icon.textContent = item.classList.contains("active") ? "–" : "+";
-            q.setAttribute("aria-expanded", item.classList.contains("active"));
-        });
-        q.addEventListener("keydown", e => {
-            if(e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                q.click();
-            }
-        });
-    });
-</script>
-
-</body>
-</html>
+    <section class="contato">        <h2>Contato</h2>        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/silvanio-gois-6667b918b/" target="_blank">silvanio-gois-6667b918b</a></p>        <p><strong>Currículo via WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=5513988301094&text=Ol%C3%A1!%20Tudo%20bem%3F" target="_blank">Clique aqui para solicitar</a></p>    </section></main>
+<footer>    <a href="https://www.silvaniogois.com.br" class="return-btn">Voltar para o Site</a><br><br>    &copy; 2025 Silvânio Gois. Todos os direitos reservados.</footer>
+<script>    document.querySelectorAll(".faq-question").forEach(q => {        q.addEventListener("click", () => {            const item = q.parentElement;            item.classList.toggle("active");            const icon = q.querySelector(".icon");            icon.textContent = item.classList.contains("active") ? "–" : "+";            q.setAttribute("aria-expanded", item.classList.contains("active"));        });        q.addEventListener("keydown", e => {            if(e.key === "Enter" || e.key === " ") {                e.preventDefault();                q.click();            }        });    });</script>
+</body></html>
