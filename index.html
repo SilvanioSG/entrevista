@@ -102,23 +102,8 @@
             line-height: 1.6;
         }
 
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background: #000;
-            margin-top: 1em;
-            border-radius: 8px;
-        }
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
+        .apresentacao-texto p {
+            margin: 0.8em 0;
         }
 
         /* FAQ - ACORDEÃO */
@@ -326,14 +311,17 @@
 
 <main>
     <section class="sobre">
-        <h2><i class="fas fa-video"></i> Apresentação</h2>
-        <div class="video-container">
-            <video controls preload="metadata" poster="capa-video.jpg">
-                <source src="videoAutoentrevistaFAQ.mp4" type="video/mp4">
-                <p>Seu navegador não suporta a tag de vídeo. <a href="videoAutoentrevistaFAQ.mp4">Clique aqui para baixar o vídeo</a>.</p>
-            </video>
-        </div>
-    </section>
+    <h2><i class="fas fa-user-circle"></i> Apresentação</h2>
+    <!-- Apresentação sintética baseada no currículo -->
+    <div class="apresentacao-texto">
+        <p>
+            Sou um profissional com <strong>mais de 14 anos de liderança estratégica</strong> nas áreas de Construção Civil, Logística e Óleo &amp; Gás, atuando da ponta operacional à gestão sênior. <mark style="background-color: #e3f2fd; color: #0d47a1; padding: 2px 4px; border-radius: 4px;"><strong>Minha trajetória combina uma sólida base técnica em Edificações e Administração com formação superior em Processos Gerenciais</strong></mark>, além de um forte domínio em <strong>análise de dados</strong> e gestão de custos e suprimentos. Integro visão sistêmica, inteligência emocional e negociação estratégica para otimizar processos e maximizar rentabilidade.
+        </p>
+        <p>
+            Atuo como agente de transformação, alinhando estratégia, tática e operação. <strong>Conto com sólida atuação em governança corporativa</strong>, metodologias ágeis e planejamento físico-financeiro, acumulando um <mark style="background-color: #e3f2fd; color: #0d47a1; padding: 2px 4px; border-radius: 4px;"><strong>histórico de sucesso em projetos de infraestrutura crítica</strong></mark>. Busco posição que exija protagonismo, visão de futuro e uso inteligente de dados para impulsionar o crescimento sustentável.
+        </p>
+    </div>
+</section>
 
     <section class="faq">
         <h2><i class="fas fa-comments"></i> Perguntas Frequentes</h2>
