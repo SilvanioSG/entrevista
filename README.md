@@ -180,7 +180,7 @@ Embora seja uma aplicação simples, seu desenvolvimento reflete uma abordagem o
 
 ## **Silvanio Góis**
 
-**Gestor de Operações e Negócios | Business Intelligence | Data Analytics | Inteligência Artificial aplicada aos Negócios | Automação de Processos | Melhoria Contínua**
+**Gestor de Operações e Negócios | Business Intelligence | Data Analytics | Inteligência Artificial aplicada aos Negócios | Processos | Melhoria Contínua**
 
 Profissional dedicado à transformação de dados em decisões estratégicas, otimização de processos e desenvolvimento de soluções digitais voltadas para eficiência operacional, inovação e geração de valor para organizações.
 
