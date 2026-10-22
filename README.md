@@ -133,7 +133,7 @@ Abra o arquivo **index.html** em qualquer navegador moderno.
 
 ---
 
-# 📱 Compatibilidade
+# Compatibilidade
 
 Compatível com os principais navegadores:
 
