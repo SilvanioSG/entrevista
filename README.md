@@ -1,7 +1,7 @@
-# 🎯 Assistente de Entrevistas Profissionais
+# Assistente de Entrevistas Profissionais
 
 <p align="center">
-  <img src="Executivo_sg_projetos.PNG" alt="Assistente de Entrevistas Profissionais" width="900">
+  <img src="SG_Site.png" alt="Assistente de Entrevistas Profissionais" width="900">
 </p>
 
 <p align="center">
@@ -36,15 +36,15 @@ Mais do que uma demonstração técnica, este projeto representa a aplicação d
 
 ---
 
-# 🌐 Demonstração Online
+# Demonstração Online
 
 ## Acesse agora
 
-👉 **https://silvaniosg.github.io/entrevista/**
+**https://silvaniosg.github.io/entrevista/**
 
 ---
 
-# 🎯 Objetivos
+# Objetivos
 
 O projeto foi desenvolvido com o propósito de:
 
@@ -56,7 +56,7 @@ O projeto foi desenvolvido com o propósito de:
 
 ---
 
-# ✨ Principais Funcionalidades
+# Principais Funcionalidades
 
 * Interface moderna e intuitiva;
 * Simulação de entrevistas profissionais;
@@ -68,7 +68,7 @@ O projeto foi desenvolvido com o propósito de:
 
 ---
 
-# 💼 Aplicações
+# Aplicações
 
 Esta solução pode ser utilizada por:
 
@@ -83,7 +83,7 @@ Esta solução pode ser utilizada por:
 
 ---
 
-# 💻 Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 * HTML5
 * CSS3
@@ -92,7 +92,7 @@ Esta solução pode ser utilizada por:
 
 ---
 
-# 📂 Estrutura do Projeto
+# Estrutura do Projeto
 
 ```text
 .
@@ -105,13 +105,13 @@ Esta solução pode ser utilizada por:
 
 ---
 
-# 🚀 Como Executar
+# Como Executar
 
 ## Opção 1 — Online
 
 Acesse diretamente:
 
-👉 https://silvaniosg.github.io/entrevista/
+https://silvaniosg.github.io/entrevista/
 
 ---
 
@@ -145,7 +145,7 @@ Compatível com os principais navegadores:
 
 ---
 
-# 📈 Possíveis Evoluções
+# Possíveis Evoluções
 
 Entre as melhorias previstas para futuras versões:
 
@@ -160,7 +160,7 @@ Entre as melhorias previstas para futuras versões:
 
 ---
 
-# 🎯 Contexto do Projeto
+# Contexto do Projeto
 
 Este projeto integra meu portfólio profissional e demonstra a aplicação de soluções digitais voltadas para:
 
@@ -176,7 +176,7 @@ Embora seja uma aplicação simples, seu desenvolvimento reflete uma abordagem o
 
 ---
 
-# 👨‍💼 Autor
+# Autor
 
 ## **Silvanio Góis**
 
@@ -184,7 +184,7 @@ Embora seja uma aplicação simples, seu desenvolvimento reflete uma abordagem o
 
 Profissional dedicado à transformação de dados em decisões estratégicas, otimização de processos e desenvolvimento de soluções digitais voltadas para eficiência operacional, inovação e geração de valor para organizações.
 
-### 🌐 Conecte-se
+### Conecte-se
 
 <p align="left">
 
@@ -204,7 +204,7 @@ Profissional dedicado à transformação de dados em decisões estratégicas, ot
 
 ---
 
-# 🤝 Contribuições
+# Contribuições
 
 Sugestões, melhorias e contribuições são sempre bem-vindas.
 
@@ -212,14 +212,14 @@ Caso identifique oportunidades de evolução ou deseje colaborar, fique à vonta
 
 ---
 
-# 📄 Licença
+# Licença
 
 Este projeto é disponibilizado para fins educacionais, demonstração de portfólio e desenvolvimento profissional.
 
 ---
 
-## ⭐ Gostou do projeto?
+## Gostou do projeto?
 
-Se este projeto foi útil para você, considere deixar uma **⭐ Star** no repositório.
+Se este projeto foi útil para você, considere deixar uma **Star** no repositório.
 
 Seu apoio incentiva a evolução contínua deste e de outros projetos.
