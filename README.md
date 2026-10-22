@@ -1,7 +1,7 @@
 # Assistente de Entrevistas Profissionais
 
 <p align="center">
-  <img src="SG_Site.png" alt="Assistente de Entrevistas Profissionais" width="900">
+  <img src="SG_Site.png" alt="Assistente de Entrevistas Profissionais" width="400">
 </p>
 
 <p align="center">
@@ -26,7 +26,7 @@
 
 ---
 
-# 📖 Sobre o Projeto
+# Sobre o Projeto
 
 O **Assistente de Entrevistas Profissionais** é uma aplicação web interativa criada para apoiar candidatos na preparação para processos seletivos, oferecendo um ambiente de prática para entrevistas de emprego.
 
